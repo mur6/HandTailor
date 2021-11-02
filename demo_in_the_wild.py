@@ -134,7 +134,7 @@ def live_application():
     opt_update = jit(opt_update)
     get_params = jit(get_params)
     i = 0
-    img_list = glob.glob("./demo/*")
+    img_list = glob.glob("./demo2/*.jpeg")
     with torch.no_grad():
         for img_path in img_list:
             i = i + 1
