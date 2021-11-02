@@ -5,13 +5,13 @@ cycler==0.10.0
 Cython==0.29.21
 flatbuffers==1.12
 future==0.18.2
-jax==0.2.6
-jaxlib==0.1.57
+jax==0.2.8
+jaxlib==0.1.60
 kiwisolver==1.3.1
 matplotlib==3.3.3
 numpy==1.19.4
 opencv-python==4.4.0.46
-opendr==0.78
+git+git://github.com/mur6/opendr.git@c439e5df0023c37bc7a9762528477d5a9ad07dbc
 opt-einsum==3.3.0
 Pillow==8.0.1
 pygame==2.0.0
