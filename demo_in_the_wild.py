@@ -4,7 +4,7 @@ import pygame
 import torch
 import time
 import torch.backends.cudnn as cudnn
-import pyrealsense2 as rs
+
 import jax.numpy as npj
 import PIL.Image as Image
 import glob
@@ -189,7 +189,7 @@ def live_application():
             beta = params['beta']
             v = mano_de(so3, beta)
             v = v*s + np.array([t[0],t[1],0])
-            frame1 = renderer.render(v.copy(),face,frame)
+            frame1 = renderer.render(v.copy(), face, frame)
             cv2.imwrite("./out/" + str(i) + "_input.png", np.flip(frame,-1))
             cv2.imwrite("./out/" + str(i) + "_output.png", np.flip(frame1,-1))
 
